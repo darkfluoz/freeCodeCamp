@@ -494,3 +494,9 @@ ALTER TABLE ONLY public.star
 -- PostgreSQL database dump complete
 --
 
+
+ALTER TABLE ONLY public.galaxy ADD CONSTRAINT galaxy_name_key UNIQUE (name);
+ALTER TABLE ONLY public.star ADD CONSTRAINT star_name_key UNIQUE (name);
+ALTER TABLE ONLY public.planet ADD CONSTRAINT planet_name_key UNIQUE (name);
+ALTER TABLE ONLY public.moon ADD CONSTRAINT moon_name_key UNIQUE (name);
+ALTER TABLE ONLY public.comet ADD CONSTRAINT comet_name_key UNIQUE (name);
